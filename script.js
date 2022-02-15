@@ -1,5 +1,5 @@
-let color = "navy";
-let size = 80;
+let color = "#343f62";
+let size = 16;
 function makeGrid() {
   for (let i = 0; i < size; i++) {
     let row = document.createElement("div");
@@ -44,14 +44,7 @@ function makeButtons() {
     }
     makeGrid();
   });
-
-  let but2 = document.createElement("button");
-  but2.textContent = "Red";
-  but2.addEventListener("click", function () {
-    color = "red";
-  });
   div.appendChild(but);
-  div.appendChild(but2);
   document.getElementById("buttonContainer").appendChild(div);
 }
 makeGrid();
