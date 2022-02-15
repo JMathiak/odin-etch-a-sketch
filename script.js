@@ -42,3 +42,10 @@ function makeButtons() {
 }
 makeGrid();
 makeButtons();
+
+
+/*
+To Do:
+Add color changing option, whether its a drop down or something else.
+Allow for user to change size of etch a sketch that takes the same amount of total size.
+
