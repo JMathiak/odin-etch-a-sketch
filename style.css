@@ -20,7 +20,7 @@ body {
   height: 600px;
   width: 600px;
   display: flex;
-  border: blueviolet 2px solid;
+  border: #343f62 2px solid;
 }
 
 #test {
@@ -45,7 +45,7 @@ body {
 
 .footer {
   display: flex;
-  background-color: #1f2937;
+  background-color: #343f62;
   color: white;
   padding: 20px;
   justify-content: center;
