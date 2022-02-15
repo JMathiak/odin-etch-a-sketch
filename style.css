@@ -24,6 +24,8 @@
 #test2 {
   display: flex;
   justify-content: center;
+  margin-top: 25px;
 }
 #button-container {
+  margin-right: 25px;
 }

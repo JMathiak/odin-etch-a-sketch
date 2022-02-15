@@ -23,24 +23,30 @@ function makeGrid() {
   }
 }
 
-// function makeGrid(size){
-
-// }
-
 function makeButtons() {
   let div = document.createElement("div");
   let but = document.createElement("button");
-  but.textContent = "clear";
+  but.textContent = "New Canvas";
+  but.style.marginRight = "25px";
   but.addEventListener("click", function () {
-    for (let i = 0; i < size * size; i++) {
-      document.getElementsByClassName("box")[i].style.backgroundColor = "white";
-      // document.getElementsByClassName("box")[i].style.border =
-      //("black 1px solid");
+    let message = "Enter your canvas size (1 - 100)";
+    let response = window.prompt(message);
+
+    const elems = document.getElementsByClassName("box");
+    while (elems.length > 0) {
+      elems[0].parentNode.removeChild(elems[0]);
     }
+
+    if (response > 100) {
+      size = 100;
+    } else {
+      size = response;
+    }
+    makeGrid();
   });
 
   let but2 = document.createElement("button");
-  but2.textContent = "red";
+  but2.textContent = "Red";
   but2.addEventListener("click", function () {
     color = "red";
   });
